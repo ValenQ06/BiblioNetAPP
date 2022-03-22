@@ -8,11 +8,11 @@
 
 <form asp-action="Create">
     <div class="mb-3">
-        <label asp-for="BookName" class="form-label"></label>
-        <input type="text" asp-for="BookName" class="form-control" />
-        <span asp-validation-for="BookName" class="text-danger"> </span>
+        <label asp-for="Name_book" class="form-label"></label>
+        <input type="text" asp-for="Name_book" class="form-control" />
+        <span asp-validation-for="Name_book" class="text-danger"> </span>
     </div>
-    <div class="mb-3">
+    @*<div class="mb-3">
         <label asp-for="Author" class="form-label"></label>
         <input type="text" asp-for="Author" class="form-control" />
         <span asp-validation-for="Author" class="text-danger"> </span>
@@ -21,6 +21,10 @@
         <label asp-for="Price" class="form-label"></label>
         <input type="text" asp-for="Price" class="form-control" />
         <span asp-validation-for="Price" class="text-danger"> </span>
-    </div>
+    </div>*@
     <button type="submit" class="btn btn-primary">Create</button>
 </form>
+
+@section Scripts {
+      <partial name="_ValidationScriptsPartial"/>
+    }
